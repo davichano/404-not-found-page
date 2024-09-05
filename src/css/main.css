@@ -2,20 +2,27 @@ body{
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
-    font-size: 15px;
+    font-size: 18px;
+    margin: 0;
 }
 
 .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-header{
-    padding: 10px 0;
+header h1{
+    display:block;
+    padding: 10px 20px;
+}
+
+#scarecrow,
+#message {
+  width: 100%;
 }
 
 #scarecrow{
-    width: 100%;
     text-align: center;
 }
 
@@ -25,7 +32,6 @@ header{
 }
 
 #message{
-    width: 100%;
     text-align: left;
 }
 
@@ -49,8 +55,8 @@ header{
     margin: 50px;
     padding: 10px;
     text-align: center;
-    border:1px solid #000;
-    background-color: #010101;
+    border:1px solid #333333;
+    background-color: #4F4F4F;
 }
 
 footer{
@@ -58,3 +64,14 @@ footer{
     color: rgba(0, 0, 0, .5);
     text-align: center;
 }
+
+@media (min-width: 1440px) {
+    #scarecrow,
+    #message {
+        width: 50%;
+    }
+
+    .container{
+        margin-bottom: 200px;
+    }
+  }
