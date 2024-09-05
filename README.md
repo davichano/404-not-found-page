@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./img/sh.jpeg)
+![](./src/img/sh.jpeg)
 
 ## My process
 
